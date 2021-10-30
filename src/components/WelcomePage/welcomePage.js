@@ -1,11 +1,11 @@
-//Talvez chamar o usestate aqui
+import "./welcomePage.css";
 function WelcomePage({ user, setIsLoggedIn }) {
   function HandleLogout() {
     setIsLoggedIn(false);
   }
   return (
     <>
-      <div>
+      <div class="container">
         <p>Hello! {user}</p>
         <button onClick={HandleLogout}>ENTRAR</button>
       </div>

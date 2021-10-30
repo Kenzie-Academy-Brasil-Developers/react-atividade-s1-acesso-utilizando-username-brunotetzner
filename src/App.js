@@ -8,7 +8,7 @@ function App() {
   const [user, setUser] = useState("");
 
   return isLoggedIn ? (
-    <div>
+    <div class="container">
       <WelcomePage user={user} setIsLoggedIn={setIsLoggedIn} />
     </div>
   ) : (
